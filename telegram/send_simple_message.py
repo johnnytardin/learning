@@ -5,9 +5,11 @@ import time
 import telegram
 
 # https://core.telegram.org/bots#generating-an-authorization-token
-my_token = ''
+token = ''
+bot = telegram.Bot(token=token)
 
-def send(msg, chat_id, token=my_token):
+
+def send(msg, chat_id):
 	"""
     send a specific message to user.
 
@@ -15,7 +17,6 @@ def send(msg, chat_id, token=my_token):
     Example group: https://web.telegram.org/#/im?p=g111111111, chat_id is:
     '-111111111'
 	"""
-	bot = telegram.Bot(token=token)
 	bot.sendMessage(chat_id=chat_id, text=msg)
 
 if __name__ == '__main__':
