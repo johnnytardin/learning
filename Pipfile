@@ -9,6 +9,7 @@ ipdb = "*"
 [packages]
 numpy = "*"
 python-telegram-bot = "*"
+requests = "*"
 
 [requires]
 python_version = "3.7"
