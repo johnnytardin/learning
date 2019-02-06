@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from random import randint
 
 import numpy as np
@@ -13,4 +14,3 @@ new_data = [x for x in values if (x > mean - 2 * standard_d)]
 new_data = [x for x in new_data if (x < mean + 2 * standard_d)]
 
 print(sorted(new_data))
-
